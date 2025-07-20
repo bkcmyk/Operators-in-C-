@@ -1,0 +1,61 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a;
+    cout<<"Enter maths score ";
+    cin>> a;
+
+    int b;
+    cout<<"Enter Chemistry score ";
+    cin>> b;
+
+    int c;
+    cout<<"Enter Physics score ";
+    cin>> c;
+
+    int d;
+    cout<<"Enter English score ";
+    cin>> d;
+
+    int e;
+    cout<<"Enter Biology score ";
+    cin>> e;
+
+    int n;
+    n=(a+b+c+d+e)/5;
+
+    if (n>=90)
+    { cout<<"Grade O";
+    }
+
+    else if (n<90 && n>=80)
+    { cout<<"Grade A";}
+
+    else if (n<80 && n>=70)
+    { cout<<"Grade B";}
+
+    else if(n>=60 && n<70){
+        cout<<"Grade C";
+    }
+
+    else if (n<60 && n>=50){
+        cout<<"Grade D";
+    }
+
+    else{
+        cout<<"FAIL";
+    }
+
+    return 0;
+    
+    }
+
+/* OUTPUT
+Enter maths score 75
+Enter Chemistry score 85
+Enter Physics score 98
+Enter English score 90
+Enter Biology score 75
+Grade A */
