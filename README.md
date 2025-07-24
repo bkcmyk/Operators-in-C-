@@ -1,3 +1,5 @@
+Use of Operators in C
+
 Objective:
 This project contains three C++ programs, each demonstrating the use of conditional statements (if, else if, else) to solve common beginner-level problems:
 1. Grade Calculator – Calculates average marks and assigns a grade.
