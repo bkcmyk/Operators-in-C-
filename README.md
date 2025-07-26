@@ -1,16 +1,16 @@
-Use of Operators in C++
+# Use of Operators in C++
 
 
-Objective:
+## Objective:
 
 This project showcases the use of conditional statements (if, else if, else) in C++ through three beginner-friendly programs. Each program solves a practical problem to reinforce core programming concepts:
 1. Grade Calculator – Calculates the average of five subject scores and assigns a grade.
 2. Coordinate Locator – Determines the location of a point in a 2D Cartesian plane.
 3. Number Sign Checker – Checks whether a given number is positive, negative, or zero.
    
-Program 1: Grade Calculator
+## Program 1: Grade Calculator
 
-Logic:
+### Logic:
 
 • Inputs: Marks in Maths, Chemistry, Physics, English, and Biology.
 
@@ -20,7 +20,7 @@ Logic:
 
   <img width="299" height="199" alt="image" src="https://github.com/user-attachments/assets/7d6d1492-f7bf-40c4-abab-600eca773f23" />
 
-Algorithm:
+### Algorithm:
 
 1. Start
 2. Input marks for Maths, Chemistry, Physics, English, and Biology
@@ -34,7 +34,7 @@ Algorithm:
 10. Display the grade
 11. End
 
-Sample Output:
+### Sample Output:
 Input:
 Enter Maths score: 75
 Enter Chemistry score: 85
@@ -48,14 +48,14 @@ Grade: A
 
 
 
-Program 2: Coordinate Locator
+## Program 2: Coordinate Locator
 
-Logic:
+### Logic:
 Given a point (x, y), the program determines its position in the Cartesian plane using the following rules:
 
 <img width="345" height="214" alt="image" src="https://github.com/user-attachments/assets/d3c96903-6fe6-4ed6-8393-9f9aa6b15b6e" />
 
-Algorithm: 
+### Algorithm: 
 
 1. Start
 2. Input x and y coordinates
@@ -68,7 +68,7 @@ Algorithm:
 9. Else → Print "At Origin"
 10. End
 
-Sample Output: 
+### Sample Output: 
 
 •	Input:
 Enter x coordinate: -6
@@ -100,14 +100,14 @@ Output:
 The point is at the Origin
 
 
-Program 3: Number Sign Checker
+## Program 3: Number Sign Checker
 
-Logic:
+### Logic:
 This program checks whether a given integer is positive, negative, or equal to zero, using simple conditional checks:
 
  <img width="489" height="111" alt="image" src="https://github.com/user-attachments/assets/a07c0299-9820-4753-9b45-36635f42b8de" />
 
-Algorithm:
+### Algorithm:
 
 1. Start
 2. Input a number
@@ -117,7 +117,7 @@ Algorithm:
 6. End
 
    
-Sample Output:
+### Sample Output:
 
 •	Input:
 Enter an integer: -5
@@ -138,12 +138,16 @@ Output:
 The number is positive
 
 
-Learning Outcomes: 
+## Learning Outcomes: 
 This combined project strengthens the understanding of decision-making in C++. These problems are essential practice for anyone starting with programming fundamentals, especially focusing on:
 
 • User input handling
+
 • Decision logic
+
 • Output formatting
+
 • Logical thinking
+
 • Real-world problem solving using code
 
