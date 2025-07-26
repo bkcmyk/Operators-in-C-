@@ -1,153 +1,141 @@
-# Use of Operators in C++
+# Implementation of Decision Making Statements in C++
 
+## Objective
 
-## Objective:
+This project demonstrates the use of **decision-making statements** (`if`, `else`, `else if`, `switch`) in C++ through three beginner-friendly programs. Each program addresses a basic yet practical problem to help learners understand core programming logic and condition evaluation:
 
-This project showcases the use of conditional statements (if, else if, else) in C++ through three beginner-friendly programs. Each program solves a practical problem to reinforce core programming concepts:
-1. Grade Calculator – Calculates the average of five subject scores and assigns a grade.
-2. Coordinate Locator – Determines the location of a point in a 2D Cartesian plane.
-3. Number Sign Checker – Checks whether a given number is positive, negative, or zero.
-   
-## Program 1: Grade Calculator
+1. **Even or Odd Checker** – Checks whether a given number is even or odd using modulus operator.  
+2. **Vowel or Consonant Checker** – Determines if an entered character is a vowel, consonant, or invalid input.  
+3. **Month Name Selector** – Displays the name of the month based on user input using a switch-case structure.
 
-### Logic:
+---
 
-• Inputs: Marks in Maths, Chemistry, Physics, English, and Biology.
+## Program 1: Even or Odd Checker
 
-• The program computes the average score.
+### Logic
 
-• It then assigns a grade based on the following scale:
+- Inputs: A single integer.  
+- Uses the modulus operator `%` to check if the number is divisible by 2.  
+- If divisible → even  
+- Otherwise → odd
 
-  <img width="299" height="199" alt="image" src="https://github.com/user-attachments/assets/7d6d1492-f7bf-40c4-abab-600eca773f23" />
+### Algorithm
 
-### Algorithm:
+1. Start  
+2. Input a number  
+3. If number % 2 == 0 → Print "Even"  
+4. Else → Print "Odd"  
+5. End  
 
-1. Start
-2. Input marks for Maths, Chemistry, Physics, English, and Biology
-3. Calculate average = (Maths + Chemistry + Physics + English + Biology) / 5
-4. If average ≥ 90 → Grade = 'O'
-5. Else if average ≥ 80 → Grade = 'A'
-6. Else if average ≥ 70 → Grade = 'B'
-7. Else if average ≥ 60 → Grade = 'C'
-8. Else if average ≥ 50 → Grade = 'D'
-9. Else → Grade = 'FAIL'
-10. Display the grade
-11. End
-
-### Sample Output:
-Input:
-Enter Maths score: 75
-Enter Chemistry score: 85
-Enter Physics score: 98
-Enter English score: 90
-Enter Biology score: 75
+### Sample Outputs
+#### Sample 1:
+Input: 
+Enter a Number: 8
 
 Output:
-Average Score: 84
-Grade: A
-
-
-
-## Program 2: Coordinate Locator
-
-### Logic:
-Given a point (x, y), the program determines its position in the Cartesian plane using the following rules:
-
-<img width="345" height="214" alt="image" src="https://github.com/user-attachments/assets/d3c96903-6fe6-4ed6-8393-9f9aa6b15b6e" />
-
-### Algorithm: 
-
-1. Start
-2. Input x and y coordinates
-3. If x > 0 and y > 0 → Print "1st Quadrant"
-4. Else if x < 0 and y > 0 → Print "2nd Quadrant"
-5. Else if x < 0 and y < 0 → Print "3rd Quadrant"
-6. Else if x > 0 and y < 0 → Print "4th Quadrant"
-7. Else if x == 0 and y ≠ 0 → Print "On Y-axis"
-8. Else if x ≠ 0 and y == 0 → Print "On X-axis"
-9. Else → Print "At Origin"
-10. End
-
-### Sample Output: 
-
-•	Input:
-Enter x coordinate: -6
-Enter y coordinate: 1
+The number 8 is Even
+#### Sample 2:
+Input: 
+Enter a Number: 5
 
 Output:
-The point is in the 2nd Quadrant
+The number 5 is Odd
 
-•	Input:
-Enter x coordinate: -6
-Enter y coordinate: 1
+---
 
-Output:
-The point is in the 2nd Quadrant
+##  Program 2: Vowel or Consonant Checker
 
-•	Input:
-Enter x coordinate: 0
-Enter y coordinate: -7
+###  Logic
 
-Output:
-The point is on the Y-axis
+- Inputs: A single character  
+- Checks whether the input lies in `'A'-'Z'` or `'a'-'z'`  
+- Then checks if the character is a vowel  
+- If not vowel → consonant  
+- If not a letter → invalid input
 
+### Algorithm
 
-•	Input:
-Enter x coordinate: 0
-Enter y coordinate: 0
+1. Start  
+2. Input a character  
+3. If character is not an alphabet → Print "Invalid input"  
+4. Else if character is a vowel → Print "Vowel"  
+5. Else → Print "Consonant"  
+6. End  
 
-Output:
-The point is at the Origin
-
-
-## Program 3: Number Sign Checker
-
-### Logic:
-This program checks whether a given integer is positive, negative, or equal to zero, using simple conditional checks:
-
- <img width="489" height="111" alt="image" src="https://github.com/user-attachments/assets/a07c0299-9820-4753-9b45-36635f42b8de" />
-
-### Algorithm:
-
-1. Start
-2. Input a number
-3. If number > 0 → Print "Positive"
-4. Else if number < 0 → Print "Negative"
-5. Else → Print "Equal to Zero"
-6. End
-
-   
-### Sample Output:
-
-•	Input:
-Enter an integer: -5
+### Sample Outputs
+#### Sample 1:
+Input: 
+Enter a Character: E
 
 Output:
-The number is negative
+The Character entered E is a Vowel.
 
-•	Input:
-Enter an integer: 0
-
-Output:
-The number is equal to 0
-
-•	Input:
-Enter an integer: 25
+#### Sample 2:
+Input: 
+Enter a Character: x
 
 Output:
-The number is positive
+The Character entered x is a Consonant.
+
+#### Sample 3:
+Input: 
+Enter a Character: 5
+
+Output:
+Invalid input. Please enter an alphabet character.
 
 
-## Learning Outcomes: 
-This combined project strengthens the understanding of decision-making in C++. These problems are essential practice for anyone starting with programming fundamentals, especially focusing on:
+---
 
-• User input handling
+## Program 3: Month Name Selector
 
-• Decision logic
+### Logic
 
-• Output formatting
+- Inputs: A number from 1 to 12  
+- Uses a `switch` statement to print the corresponding month  
+- Displays an error if the input is not between 1 and 12
 
-• Logical thinking
+### Algorithm
 
-• Real-world problem solving using code
+1. Start  
+2. Display menu with month numbers (1–12)  
+3. Input choice number  
+4. Use switch-case:  
+    - Case 1 → January  
+    - Case 2 → February  
+    - …  
+    - Case 12 → December  
+5. Default → Print "Invalid input"  
+6. End  
+
+### Sample Outputs
+#### Sample 1:
+Input: Enter Choice: 5
+
+Output: May
+
+#### Sample 2:
+Input: Enter Choice: 11
+
+Output: November
+
+#### Sample 3:
+
+Input: Enter Choice: 15
+
+Output: Invalid Choice Entered. Please enter a number between 1 and 12.
+
+---
+
+## Learning Outcomes
+
+This project enhances understanding of **conditional logic** and decision-making in C++. Through these programs, learners develop:
+
+- Input validation using character and number ranges  
+-  Control flow using `if`, `else`, `else if`, and `switch`  
+-  Usage of logical and relational operators  
+- Real-world problem-solving through decision-based logic  
+- Clear, structured output formatting  
+
+These types of exercises are essential for building programming confidence and foundational skills in C++.
 
