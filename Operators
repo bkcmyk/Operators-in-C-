@@ -1,46 +1,48 @@
 // Name: Barkha Kumari
 // PRN: 24070123029
-//Batch: EnTc A1
+// Batch: EnTc A1
 
 #include <iostream>
 using namespace std;
-int main(){
 
-    int x,y;
-    cout<<"Enter x coordinate: ";
-    cin>>x;
-    cout<<"Enter y Coordinate: ";
-    cin>>y;
+int main() {
+    int x, y;
+    cout << "Enter x coordinate: ";
+    cin >> x;
+    cout << "Enter y coordinate: ";
+    cin >> y;
 
-    if(x>0 && y>0){
-        cout<<"The point is in the 1st Quadrant";    }
-    
-    else if(x<0 && y>0){
-        cout<<"The point is in the 2nd Quadrant";}
+    if (x > 0 && y > 0) {
+        cout << "The point is in the 1st Quadrant" << endl;
+    }
+    else if (x < 0 && y > 0) {
+        cout << "The point is in the 2nd Quadrant" << endl;
+    }
+    else if (x < 0 && y < 0) {
+        cout << "The point is in the 3rd Quadrant" << endl;
+    }
+    else if (x > 0 && y < 0) {
+        cout << "The point is in the 4th Quadrant" << endl;
+    }
+    else if (x == 0 && y != 0) {
+        cout << "The point is on the Y-axis" << endl;
+    }
+    else if (x != 0 && y == 0) {
+        cout << "The point is on the X-axis" << endl;
+    }
+    else {
+        cout << "The point is at the Origin" << endl;
+    }
 
-    else if(x<0 && y<0){
-        cout<<"The point is in the 3rd Quadrant";}
-        
-    else if(x>0 && y<0){
-        cout<<"The point is in 4th Quadrant";}
-
-    else if (x==0 && y!=0)
-    cout<<"The point is on the Y-axis";
-    
-    else if (x!=0 && y==0)
-    cout<<"The point is on the X-axis";
-    
-    else
-    cout<<"The point is at Origin";
-    
-
-
+    return 0;
 }
 
 
-/* OUTPUT
-Enter x coordinate: -6
-Enter y Coordinate: 1
-The point is in the 2nd Quadrant
+/* OUTPUT 
 
-=== Code Execution Successful ===*/
+Enter x coordinate: 5
+Enter y coordinate: -2
+The point is in the 4th Quadrant
+
+
+=== Code Execution Successful === */
