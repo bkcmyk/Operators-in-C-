@@ -1,65 +1,57 @@
 // Name: Barkha Kumari
 // PRN: 24070123029
-//Batch: EnTc A1
+// Batch: EnTc A1
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int a;
-    cout<<"Enter maths score ";
-    cin>> a;
+    int maths, chemistry, physics, english, biology;
+    cout << "Enter Maths score: ";
+    cin >> maths;
 
-    int b;
-    cout<<"Enter Chemistry score ";
-    cin>> b;
+    cout << "Enter Chemistry score: ";
+    cin >> chemistry;
 
-    int c;
-    cout<<"Enter Physics score ";
-    cin>> c;
+    cout << "Enter Physics score: ";
+    cin >> physics;
 
-    int d;
-    cout<<"Enter English score ";
-    cin>> d;
+    cout << "Enter English score: ";
+    cin >> english;
 
-    int e;
-    cout<<"Enter Biology score ";
-    cin>> e;
+    cout << "Enter Biology score: ";
+    cin >> biology;
 
-    int n;
-    n=(a+b+c+d+e)/5;
+    int average = (maths + chemistry + physics + english + biology) / 5;
 
-    if (n>=90)
-    { cout<<"Grade O";
-    }
+    cout << "Average Score: " << average << endl;
 
-    else if (n<90 && n>=80)
-    { cout<<"Grade A";}
-
-    else if (n<80 && n>=70)
-    { cout<<"Grade B";}
-
-    else if(n>=60 && n<70){
-        cout<<"Grade C";
-    }
-
-    else if (n<60 && n>=50){
-        cout<<"Grade D";
-    }
-
-    else{
-        cout<<"FAIL";
-    }
+    if (average >= 90)
+        cout << "Grade: O" << endl;
+    else if (average >= 80)
+        cout << "Grade: A" << endl;
+    else if (average >= 70)
+        cout << "Grade: B" << endl;
+    else if (average >= 60)
+        cout << "Grade: C" << endl;
+    else if (average >= 50)
+        cout << "Grade: D" << endl;
+    else
+        cout << "Grade: FAIL" << endl;
 
     return 0;
-    
-    }
+}
+
 
 /* OUTPUT
-Enter maths score 75
-Enter Chemistry score 85
-Enter Physics score 98
-Enter English score 90
-Enter Biology score 75
-Grade A */
+Enter Maths score: 75
+Enter Chemistry score: 85
+Enter Physics score: 52
+Enter English score: 90
+Enter Biology score: 96
+Average Score: 79
+Grade: B
+
+
+=== Code Execution Successful === */
